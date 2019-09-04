@@ -3,7 +3,7 @@ package com.lz;
 /**
  * @author liizzz
  * @date 2019-09-04 15:46
- *
+ * <p>
  * 主类，执行应用层操作
  */
 public class QrCodeTest {
@@ -12,7 +12,7 @@ public class QrCodeTest {
         print();
     }
 
-    public static void create() throws Exception{
+    public static void create() throws Exception {
         // 存放在二维码中的内容
         String text = "www.baidu.com";
         // 嵌入二维码的图片路径
@@ -28,7 +28,7 @@ public class QrCodeTest {
 
     }
 
-    public static void print() throws Exception{
+    public static void print() throws Exception {
         String path = "C:\\Users\\Administrator\\Desktop\\3.jpg";
         String str = QRCodeUtil.decode(path);
         System.out.println(str);
